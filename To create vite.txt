@@ -1,0 +1,174 @@
+To create vite
+step 1
+npm create vite@latest ./           //(./ used to current folder)
+step 2
+select framework as react
+step 3
+select language as javascript
+step 4
+npm install
+
+To run devlopment server
+npm run dev
+
+JavaScript
+
+  press r + enter to restart the server
+  press u + enter to show server url
+  press o + enter to open in browser
+  press c + enter to clear console
+  press q + enter to quit
+
+
+We are using react router dom to make single page website
+By using this only path change it does not load the hole page.
+
+To install react DOM goto page reactRouter page 
+Run this line in terminal to install react router DOM
+	npm install localforage match-sorter sort-by
+Then add routing system in main.jsx
+   
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    //element: <div>Hello world!</div>,
+      element: <App/>, 
+
+  },
+]);
+
+
+Basic of React JS
+React JS is Library
+Library
+	Library has pre_define functional code
+Library: When you use a library, you are in control of the application's flow. You call the library's functions as needed
+
+FrameWork
+	FrameWork like blue Print(Or we can say we have model)
+	In frame work we call and degine(ExpresJS)
+Framework: A framework, on the other hand, dictates the structure and flow of the application. It provides a skeleton or a structure within which you build your application.
+
+Why React..?
+1. dynamic aap
+2. make reuse of code
+
+What is JSX (JavaScript XML)?
+	JSX is combination is JavaScript and Html.
+Eg:
+    <body>
+    <p classname="Hello" ></p>
+    </body>
+
+Key Features of JSX:
+
+HTML-like Syntax:
+JSX looks similar to HTML, making it easier for developers to understand and write UI components. For example:
+
+jsx Code
+const element = <h1>Hello, world!</h1>;
+
+Embedding Expressions:
+You can embed JavaScript expressions within JSX by using curly braces {}. This allows you to dynamically display values:
+
+jsx code
+const name = 'John';
+const element = <h1>Hello, {name}!</h1>;
+
+Components:
+JSX is used to create React components, which are the building blocks of a React application. Components can be defined as functions or classes:
+
+jsx Code
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+Attributes:
+JSX allows you to pass attributes to elements, similar to HTML. These attributes can be static or dynamic:
+
+jsx Code
+const element = <img src={user.avatarUrl} alt={user.name} />;
+
+Children:
+You can nest elements inside other elements, allowing you to build complex UIs:
+
+jsx Code
+const element = (
+  <div>
+    <h1>Hello!</h1>
+    <h2>Good to see you here.</h2>
+  </div>
+);
+
+JavaScript Functions:
+You can include JavaScript functions and objects directly within JSX, providing powerful capabilities for rendering logic:
+
+jsx Code
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+};
+
+const element = (
+  <h1>
+    Hello, {formatName(user)}!
+  </h1>
+);
+
+JSX Transpilation:
+Babel: JSX is not valid JavaScript, so it needs to be transformed into regular JavaScript before it can be executed by the browser. Tools like Babel are used to transpile JSX into React.createElement calls.
+
+For example, this JSX:
+
+jsx Code
+const element = <h1>Hello, world!</h1>;
+
+
+js code
+const element = React.createElement('h1', null, 'Hello, world!');
+
+
+JSX function:
+function App(){
+ const myName = "Danish";
+ return(
+   <> 
+      <p>hi, {myName}</p>
+   </>
+   )
+}
+
+
+Public folder
+  In public folder mostly we store static item like images, logo, Vedios.
+
+App JSX
+  App.Jsx is a entry point of the porgramme. In App.jsx first all code is render first.
+
+main.jsx
+  main.jsx mainly used for setup routing.You target the route and render it
+
+index.html
+ In index.html we have ID we target ID and render it.
+ 
+How to Structure our code
+1. In compnent folder put our reusable code. 
+2. In page folder we create some discreaption.
+
+
+  
+  
+
+
+
+
+
